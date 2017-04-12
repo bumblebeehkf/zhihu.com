@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页 - 知乎</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="scripts/index.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="header-main">
+        <a class="logo" href="">知乎</a>
+        <div class="search">
+            <form action="">
+                <input class="search-input" type="text" placeholder="搜索你感兴趣的内容...">
+                <button class="search-button" type="submit">
+                    <span class="search-button-icon"></span>
+                </button>
+            </form>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">话题</a></li>
+                <li><a href="">发现</a></li>
+                <li><a href="">消息</a></li>
+            </ul>
+        </div>
+        <button class="header-ask" type="submit">提问</button>
+        <div class="profile">
+            <a href="">
+                &nbsp;&nbsp;
+                <img class="avatar" src="images/avatar.jpg" alt="">
+                <div class="name">CV大虾 </div>
+            </a>
+
+            <!--profile float-->
+            <ul class="profile-float">
+                <li><a href=""><span class="profile-myprofile"></span> 我的主页</a></li>
+                <li><a href=""><span class="profile-mail"></span> 私信</a></li>
+                <li><a href=""><span class="profile-settings"></span> 设置</a></li>
+                <li><a href=""><span class="profile-logout"></span> 退出</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="content">
+    <div class="main">
+
+        <div class="homeEntry">
+            <div class="homeEntry-avatar">
+                <img src="images/avatar2.jpg" alt="">
+            </div>
+            <div class="homeEntry-box">
+                <ul>
+                    <li><a href=""><span class="homeEntry-box-ask"></span> 提问</a></li>
+                    <li><a href=""><span class="homeEntry-box-ans"></span> 回答</a></li>
+                    <li><a href=""><span class="homeEntry-box-write"></span> 写文章</a></li>
+                </ul>
+                <div class="homeEntry-draft">
+                    <a href="">草稿</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="newest">
+            <span> </span> &nbsp;最新动态
+        </div>
+
+        <div class="news-update">
+            <a href="">3 条新动态</a>
+        </div>
+
+        <div class="mainContent">
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContent-box">
+                <div class="main-avatar"><a href=""><img src="images/avatar3.jpg" alt=""></a></div>
+                <a class="main-vote">12</a>
+                <div class="main-vote-expand">
+                    <button class="button-up" title="赞同">
+                        <span></span><a href="">12</a>
+                    </button>
+                    <button class="button-down" title="反对，不会显示你的姓名">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-about">
+                        <a href="">谦谦 </a>回答了问题 • <span>9小时前</span>
+                        <div class="mainContent-box-close"></div>
+                    </div>
+                    <div class="main-content-source">
+                        <div class="source-title"><a href="">如何看待哔哩哔哩的开源 HTML5 播放器内核 flv.js?</a></div>
+                        <div class="source-author"><a href="">谦谦</a>, <span> &nbsp;&nbsp;naive coder</span></div>
+                        <div class="source-answer">
+                            谢邀，抱歉拖延到现在才来回答问题。
+                            利益相关：flv.js 作者
+
+                            GitHub - Bilibili/flv.js: HTML5 FLV Player
+
+                            flv.js 做了三件事：
+                            1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频
+                            2. 使 Bilibili 网页端平滑过度到 HTML5…
+                            <a class="source-answer-show">显示全部</a>
+                        </div>
+                        <div class="source-answer-complete">
+                            谢邀，抱歉拖延到现在才来回答问题。<br>利益相关：flv.js 作者<br><br><a href="//link.zhihu.com/?target=https%3A//github.com/Bilibili/flv.js" class=" wrap external" target="_blank" rel="nofollow noreferrer">GitHub - Bilibili/flv.js: HTML5 FLV Player<i class="icon-external"></i></a><br><br>flv.js 做了三件事：<br>1. HTML5 原生仅支持播放 mp4/webm 格式，flv.js 实现了在 HTML5 上播放 FLV 格式视频<br>2. 使 Bilibili 网页端平滑过度到 HTML5 播放器，历史遗留不再是障碍<br>3. 对于视频直播，在 HTML5 上支持了延迟极低 HTTP FLV 播放，解开网页端直播对 Flash 的依赖<br><br>一些人问我为什么不直接采用 MP4 格式，并表示对 FLV 格式的厌恶<br>这个问题一方面是历史遗留问题，由于视频网站前期完全依赖 Flash 播放而选择 FLV 格式；<br><br>另一方面，如果仔细研究过 FLV/MP4 封装格式，你会发现 FLV 格式非常简洁，而 MP4 内部 box 种类繁杂，结构复杂固实而又有太多冗余数据。FLV 天生具备流式特征适合网络流传输，而 MP4 这种使用最广泛的存储格式，设计却并不一定优雅。<br><br>这里我不想谈论多媒体封装格式的优劣。flv.js 是在 HTML5 上实现自定义视频格式播放的一个较好的范例，充分利用了 <a href="//link.zhihu.com/?target=https%3A//w3c.github.io/media-source/" class=" wrap external" target="_blank" rel="nofollow noreferrer">Media Source Extensions<i class="icon-external"></i></a>, Fetch API 以及 ECMAScript 6 等 HTML5/Web 上较新的技术，并考验着这些 API：开发期间发现 Edge 对 Fetch API 的支持存在 bug，发现各个浏览器在 MSE 的实现细节上都有一些差异和问题，发现 Safari 的 MSE 实现健壮度较差（滑稽）<br><br>在 flv.js 项目初期，Media Source Extensions (MSE) 在国内处于无人问津的状态；而 MSE API 已经过近 4 年的发展演进，是 HTML5 多媒体相关最重要的 API 之一。MSE 是 HTML5 上实现自定义格式播放的关键，flv.js 开源也是希望 MSE 能被更广泛地了解和应用。<br><br>最后，Chrome 等浏览器正在加速 Flash 淘汰的进程，HTML5 video 由各浏览器厂商实现了高性能硬解，MSE 作为媒体格式扩展的补充，flv.js 证明了当前 HTML5 多媒体技术已超越陈旧的 Flash
+                            发布于 2016-10-30
+                        </div>
+                    </div>
+                    <div class="main-content-footer">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                    </div>
+                    <div class="main-content-footer main-content-footer-hover">
+                        <a href="" class="source-footer-follow"><span></span> 关注问题</a>
+                        &nbsp;
+                        <a href="" class="source-footer-comment"><span></span> 添加评论</a>
+                        &nbsp;
+                        <a href="" class="source-footer-thank"><span></span> 感谢</a>
+                        &nbsp;
+                        <a href="" class="source-footer-share"><span></span> 分享</a>
+                        &nbsp;
+                        <a href="" class="source-footer-store"><span></span>收藏 </a>
+                        <span class="source-footer-point"> •</span>
+                        <a href="" class="source-footer-reprint">没有帮助</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">举报</a>
+                        <span class="source-footer-point">•</span>
+                        <a href="" class="source-footer-reprint">作者保留权利</a>
+                        <a class="source-footer-collapse"><span></span> 收起</a>
+                    </div>
+                    <div class="main-content-footer-tojq"></div>
+                    <div class="each-collapse">
+                        <a class="source-footer-collapse"><span></span> 收起 </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="right">
+        <div class="right-ad">
+            <a href="" class=""><img src="images/add.jpg"  alt=""></a>
+            <a class="right-ad-closed"></a>
+            <div class="right-tooltip">
+                <div class="right-tooltip-arrow"></div>
+                <div class="right-tooltip-inner">不再显示</div>
+            </div>
+        </div>
+        <div class="right-question">
+            <a href="" class="right-question-reserve">
+                <div class="right-icon-position"></div>
+                我的收藏</a>
+            <a href="" class="right-question-follow">
+                <div class="right-icon-position"></div>
+                我关注的问题</a>
+            <a href="" class="right-question-invite">
+                <div class="right-icon-position"></div>
+                邀请我回答的问题</a>
+        </div>
+        <div class="right-center">
+            <a href="" class="right-center-edit">
+                <div class="right-icon-position"></div>
+                公共编辑动态</a>
+            <a href="" class="right-center-society">
+                <div class="right-icon-position"></div>
+                社区服务中心</a>
+            <a href="" class="right-center-edition">
+                <div class="right-icon-position"></div>
+                版权服务中心</a>
+        </div>
+        <div class="right-column">
+            <div class="right-subtitle">知乎专栏</div>
+            <a href="" class="right-column-find">
+                <div class="right-column-position"></div>
+                专栏・发现
+            </a>
+        </div>
+        <div class="right-live">
+            <div class="right-subtitle">知乎 Live ⚡️</div>
+            <a class="right-findallLink" href="">
+                <div class="right-findall">查看全部 >></div>
+            </a>
+            <a href="" class="right-live-first">
+                <div class="right-icon-position2"></div>
+                48小时直播英国家庭的圣诞节
+            </a>
+            <a href="" class="right-live-second">
+                <div class="right-icon-position2"></div>
+                女生要不要当律师
+            </a>
+            <a href="" class="right-live-third">
+                <div class="right-icon-position2"></div>
+                半导体先进工艺的器件结构和挑战
+            </a>
+        </div>
+        <div class="right-table">
+            <div class="right-subtitle">知乎圆桌</div>
+            <a class="right-findallLink" href="">
+                <div class="right-findall">查看全部 >></div>
+            </a>
+            <div class="right-table-line">
+                <a href="" class="right-table-first"><span class="right-icon-position2"></span>我爱看美剧</a>
+                <a href="" class="right-table-first-right">还有 14 小时开始</a>
+            </div>
+            <div class="right-table-line"><a href="">
+                <a href="" class="right-table-second"><span class="right-icon-position2"></span>NBA 赛场内外</a>
+                <a href="" class="right-table-first-right">还有 4 开始</a> </a>
+            </div>
+            <div class="right-table-line">
+                <a href="" class="right-table-third"><span class="right-icon-position2"></span>成为心理咨询师</a>
+                <a href="" class="right-table-first-right">还有 3 天开始</a>
+            </div>
+        </div>
+        <div class="right-bookstore">
+            <div class="right-subtitle">知乎书店</div>
+            <a class="right-findallLink" href="">
+                <div class="right-findall">查看全部 >></div>
+            </a>
+            <a href="" class="right-bookstore-first">
+                <div class="right-icon-position2"></div>
+                未来生活：2016科技盘点
+            </a>
+            <a href="" class="right-bookstore-second">
+                <div class="right-icon-position2"></div>
+                如何做出好创意：18个切...
+            </a>
+            <a href="" class="right-bookstore-third">
+                <div class="right-icon-position2"></div>
+                汽车是怎么造出来的
+            </a>
+        </div>
+        <div class="right-app">
+            <a href="" class="right-app-icon">
+                <div class="right-icon-position2"></div>
+                下载 App
+            </a>
+        </div>
+        <div class="right-footer">
+            <div class="right-footer-first">
+                <a href="" class="liukanshan">刘看山</a>
+                <span> • </span>
+                <a href="" class="zhihuguide">知乎指南</a>
+                <span> • </span>
+                <a href="" class="yourfeedback">建议反馈</a>
+                <span> • </span>
+                <a href="" class="mobileapp">移动应用</a>
+            </div>
+            <div class="right-footer-second">
+                <a href="" class="joinzhihu">加入知乎</a>
+                <span> • </span>
+                <a href="" class="zhihuprotocol">知乎协议</a>
+                <span> • </span>
+                <a href="" class="contackus">联系我们 © 2016 知乎</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="feedback">
+    <a href=""><span class="feedbackIcon"></span></a>
+</div>
+
+<div class="backtotop">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+
+    <div class="backtotop-tooltip">
+        <span class="triangle"></span>
+        <span class="rectangle"> 回到顶部</span>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
